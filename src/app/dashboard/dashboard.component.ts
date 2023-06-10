@@ -8,6 +8,7 @@ import { Skin } from '../Skin';
 })
 export class DashboardComponent {
   skins: Skin[] = [];
+  // Output LastSkin
 constructor(){}
   actualizarSkins(nuevasSkins: Skin[]) {
     this.skins = nuevasSkins;

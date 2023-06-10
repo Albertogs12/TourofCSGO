@@ -1,4 +1,4 @@
-  <div class="grid place-content-center mt-20 h-full w-full" *ngIf="allSkins">
+  <div class="grid place-content-center mt-20 sm:mt-44 h-full w-full" *ngIf="allSkins">
     <ul class="gap-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <li class=" p-5 max-w-md rounded overflow-hidden hover:scale-110 shadow-2xl grid place-items-center" *ngFor="let skin of allSkins | paginate: { itemsPerPage: 9, currentPage: p }" routerLink="">
         <a routerLink="/detalle/{{ skin.name }}">
